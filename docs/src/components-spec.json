@@ -247,10 +247,24 @@
     "events": { "update": "slider value changed" }
   },
   "gux-spin-button": {},
-  "gux-switch": {
-    "attributes": { "selected-value": "text" },
-    "events": { "selectionChanged": "switch state was changed" }
+  "gux-switch": {},
+  "gux-switch-beta": {
+    "hidePage": true,
+    "attributes": {
+      "layout": "text",
+      "value": "text"
+    },
+    "events": {
+      "guxvaluechanged": "selected item changed"
+    }
   },
+  "gux-switch-item": {
+    "hidePage": true,
+    "attributes": {
+      "value": "text"
+    }
+  },
+  "gux-switch-deprecated": {},
   "gux-tabs": {
     "attributes": {
       "allow-sort": "checkbox"

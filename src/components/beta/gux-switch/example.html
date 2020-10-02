@@ -1,0 +1,109 @@
+<h1>gux-switch</h1>
+
+<h2>Text</h2>
+
+<h3>Small</h3>
+<gux-switch-beta layout="small" value="day">
+  <gux-switch-item value="month">Month</gux-switch-item>
+  <gux-switch-item value="week">Week</gux-switch-item>
+  <gux-switch-item value="day">Day</gux-switch-item>
+  <gux-switch-item value="hour" disabled>Hour</gux-switch-item>
+  <gux-switch-item value="minute">Minute</gux-switch-item>
+</gux-switch-beta>
+
+<h3>Default</h3>
+<gux-switch-beta layout="default" value="month">
+  <gux-switch-item value="month">Month</gux-switch-item>
+  <gux-switch-item value="week" disabled>Week</gux-switch-item>
+  <gux-switch-item value="day">Day</gux-switch-item>
+  <gux-switch-item value="hour">Hour</gux-switch-item>
+  <gux-switch-item value="minute">Minute</gux-switch-item>
+</gux-switch-beta>
+
+<h2>Icon</h2>
+
+<h3>Small</h3>
+<gux-switch-beta layout="small" value="stack">
+  <gux-switch-item value="bar-vertical" icon>
+    <gux-icon
+      icon-name="ic-24-graph-bar-vertical"
+      screenreader-text="bar-vertical"
+    ></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="bar" icon>
+    <gux-icon icon-name="ic-24-graph-bar" screenreader-text="bar"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="grid-cell" icon>
+    <gux-icon
+      icon-name="ic-24-graph-grid-cell"
+      screenreader-text="grid-cell"
+    ></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="grid" icon diabled>
+    <gux-icon icon-name="ic-24-graph-grid" screenreader-text="grid"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="line" icon>
+    <gux-icon icon-name="ic-24-graph-line" screenreader-text="line"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="stack" icon>
+    <gux-icon
+      icon-name="ic-24-graph-stack"
+      screenreader-text="stack"
+    ></gux-icon>
+  </gux-switch-item>
+</gux-switch-beta>
+
+<h3>Default</h3>
+<gux-switch-beta layout="default" value="bar">
+  <gux-switch-item value="bar-vertical" icon>
+    <gux-icon
+      icon-name="ic-24-graph-bar-vertical"
+      screenreader-text="bar-vertical"
+    ></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="bar" icon>
+    <gux-icon icon-name="ic-24-graph-bar" screenreader-text="bar"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="grid-cell" icon>
+    <gux-icon
+      icon-name="ic-24-graph-grid-cell"
+      screenreader-text="grid-cell"
+    ></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="grid" icon>
+    <gux-icon icon-name="ic-24-graph-grid" screenreader-text="grid"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="line" icon>
+    <gux-icon icon-name="ic-24-graph-line" screenreader-text="line"></gux-icon>
+  </gux-switch-item>
+  <gux-switch-item value="stack" icon disabled>
+    <gux-icon
+      icon-name="ic-24-graph-stack"
+      screenreader-text="stack"
+    ></gux-icon>
+  </gux-switch-item>
+</gux-switch-beta>
+
+<h2>Get value</h2>
+
+<gux-switch-beta id="get-value" layout="small" value="month">
+  <gux-switch-item value="month">Month</gux-switch-item>
+  <gux-switch-item value="week">Week</gux-switch-item>
+  <gux-switch-item value="day">Day</gux-switch-item>
+  <gux-switch-item value="hour">Hour</gux-switch-item>
+  <gux-switch-item value="minute">Minute</gux-switch-item>
+</gux-switch-beta>
+
+<div>
+  Last retrieved value from gux-switch: <span id="value-output">N/A</span>
+</div>
+
+<gux-button
+  onclick="(function() {
+  const guxSwitch = document.getElementById('get-value');
+  const valueOutput = document.getElementById('value-output');
+
+  valueOutput.textContent = guxSwitch.value;
+})()"
+  >Get Value</gux-button
+>

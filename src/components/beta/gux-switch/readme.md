@@ -7,18 +7,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Properties
 
-| Property        | Attribute        | Description                                        | Type                             | Default     |
-| --------------- | ---------------- | -------------------------------------------------- | -------------------------------- | ----------- |
-| `items`         | --               | The names and values of the switch buttons         | `ISwitchItem[]`                  | `undefined` |
-| `layout`        | `layout`         | The allowed sizes                                  | `"large" \| "medium" \| "small"` | `'medium'`  |
-| `selectedValue` | `selected-value` | Used to keep track of the currently selected value | `string`                         | `undefined` |
+| Property | Attribute | Description                                        | Type                   | Default     |
+| -------- | --------- | -------------------------------------------------- | ---------------------- | ----------- |
+| `layout` | `layout`  | The allowed sizes                                  | `"default" \| "small"` | `'default'` |
+| `value`  | `value`   | Used to keep track of the currently selected value | `string`               | `undefined` |
 
 
 ## Events
 
-| Event              | Description                         | Type               |
-| ------------------ | ----------------------------------- | ------------------ |
-| `selectionChanged` | Triggers when a switch is selected. | `CustomEvent<any>` |
+| Event             | Description                                | Type                  |
+| ----------------- | ------------------------------------------ | --------------------- |
+| `guxvaluechanged` | Triggers when a switch option is selected. | `CustomEvent<string>` |
 
 
 ----------------------------------------------
